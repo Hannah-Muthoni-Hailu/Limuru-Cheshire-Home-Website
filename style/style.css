@@ -1,0 +1,801 @@
+/* General Body Settings */
+body{
+    min-width: fit-content;
+}
+
+/* General styling for buttons */
+button > a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+button:hover{
+    animation: none;
+}
+
+/* General text stylings */
+h1, h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Styling for links */
+a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Styling for image captions */
+figcaption{
+    text-align: center;
+    background-color: #86B6FE;
+}
+
+/* Donate button styling */
+.donate-button{
+    animation: shake 0.5s infinite;
+    box-shadow: 5px 5px 5px rgb(170, 97, 109);
+}
+
+/*Donate button shake animation */
+@keyframes shake{
+    0%{rotate: 15deg;}
+    25%{rotate: 0deg;}
+    50%{rotate: -15deg;}
+    75%{rotate: 0deg;}
+}
+
+/*Navbar styling*/
+/* Individual link styling */
+[id^="nav_link_"]{
+    margin: 0 20px;
+}
+
+[id^="nav_link_"]:last-of-type:hover{
+    background-color: transparent;
+}
+
+/* All links styling */
+#nav-links{
+    margin-left: 120px;
+}
+
+/* General navbar styling */
+#navbar{
+    height: 70px;
+    z-index: 2;
+    font-size: 20px;
+    margin-right: 50px;
+    background-color: #86B6FE;
+    color: #8d8c8c;
+    width: 100%;
+    text-shadow: 1px 1px 5px #000000;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Styling for the icon that opens the navbar on small screens */
+.navbar-nav .icon {
+    display: none;
+}
+
+/*Header styling*/
+#head_banner{
+    background-color: #86B6FE;
+    padding: 10px 0;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#header_slide{
+    left: 10px;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 5px #0d10b6;
+    animation: headerslide;
+    animation-duration: 4s;
+}
+
+/* Header slide in animation */
+@keyframes headerslide{
+    from {left: -200px;}
+    to{left: 10px;}
+}
+
+/*Footer Styling*/
+/* Styling for the footer links */
+.links{
+    text-decoration: none;
+    color: #000000;
+    margin: 0.5em;
+}
+
+.links:hover{
+    text-decoration: underline;
+}
+
+/* General footer element styling */
+footer{
+    padding-top: 20px;
+    display: grid;
+    grid-template-areas: 
+    'top top top top top top'
+    'middle middle middle middle middle middle'
+    'bottom1 bottom1 bottom2 bottom2 bottom3 bottom3';
+    background-color: #86B6FE;
+    margin-top: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Styling for the donation button section */
+#donation-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0.5em;
+    grid-area: top;
+}
+
+.footer-donate-button{
+    width: 150px;
+    height: 50px;
+    font-size: x-large;
+}
+
+#footer-donate-message{
+    font-size: 35px;
+}
+
+/* Styling for the social media links section */
+#social-media{
+    grid-area: middle;
+}
+
+#social-media div{
+    display: inline-block;
+    margin: 20px 12%;
+}
+
+#social-media-header{
+    width: 40%;
+}
+
+#social-media-links *{
+    margin: 10px 15px;
+}
+
+#facebook{
+    background-color: #3b5998;
+}
+
+/* Styling for the more info section and links */
+.more_info_one{
+    grid-area: bottom1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.more_info_two{
+    grid-area: bottom2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contact_section{
+    grid-area: bottom3;
+}
+
+/*Home Page Styling*/
+/*Slideshow section Styling*/
+#slideshow{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20px;
+    height: 500px;
+    overflow: hidden;
+}
+
+#slideshow-div{
+    position: relative;
+    top: -1000px;
+    animation: slideshow 10s infinite;
+    z-index: 0;
+}
+
+/* Styling for the slideshow images */
+#slideshow-div > img{
+    width: 100%;
+    height: 500px;
+}
+
+/* Styling for the donate button in the slideshow caption */
+#homepage-top-donate{
+    z-index: 1;
+    position: absolute;
+    top: 650px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #444141;
+    width: 90%;
+    margin-left: 5%;
+    height: 120px;
+}
+
+/* Animation that creates the slideshow */
+@keyframes slideshow{
+    0% {top: 0;}
+    15% {top: -500px;}
+    30%{top: -1000px;}
+    45%{top: -1500px;}
+    60%{top: -1000px;}
+    75%{top: -500px;}
+    100%{top: 0px;}
+}
+
+/* About Us Section */
+/* General about us section styling */
+#about-us{
+    width: 90%;
+    margin-left: 5%;
+    background-color: #5e5a5a1e;
+    padding: 50px;
+    border-bottom: 1px solid #0000004d;
+    border-radius: 15px;
+    margin-top: 50px;
+}
+
+/* About us title styling */
+#about-us-paragraph > h2{
+    margin: 0 0 1em 3.5em;
+    text-align: left;
+}
+
+/* About us text styling */
+#about-us-paragraph{
+    height: fit-content;
+    font-family: Helvetica, Courier, sans-serif;
+}
+
+#about-us-paragraph > div{
+    width: 100%;
+    text-align: left;
+}
+
+/* Styling for the about us youtube video */
+#about-us-paragraph > iframe{
+    height: 300px;
+    float: right;
+    padding: 0;
+    width: 50%;
+    margin-left: 20px;
+    border: 1px solid black;
+}
+
+/*Founders Section Styling*/
+/* General founders section styling */
+#founders{
+    width: 100%;
+    margin: 50px 0;
+    height: fit-content;
+    padding-left: 40px;
+    border-bottom: 1px solid #0000004d;
+    background-color: #3786cf31;
+    display: grid;
+    grid-template-areas: 
+    'item1 item1 item1 item1 item1 item3'
+    'item2 item2 item2 item2 item2 item4';
+    gap: 5px;
+}
+
+/* Styling for the founder's section title */
+.item1{ grid-area: item1;}
+
+#founders > h2{
+    text-align: center;
+    margin: 0.5em;
+}
+
+/* Styling for information on founders */
+.item2{ 
+    grid-area: item2;
+    display: flex;
+    flex-direction: row;
+}
+
+.founders-info{
+    width: 40%;
+    margin: 50px;
+    text-align: center;
+    height: fit-content;
+    font-family: Helvetica, Courier, sans-serif;
+}
+
+/* Styling for the founders' images */
+.founders-info > img{
+    width: 50%;
+    height: 30%;
+    margin-bottom: 40px;
+    border-radius: 100px;
+}
+
+/* Styling for the administrators title */
+.item3{ grid-area: item3;}
+
+/* Styling for the administrator's information */
+.item4{ 
+    grid-area: item4;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 2px solid rgb(39, 38, 38);
+    border-radius: 15px;
+}
+
+.item4 > article{
+    height: 45%;
+    margin-bottom: 10%;
+    border: 1px solid rgb(39, 38, 38);
+}
+
+/*FAQ section styling*/
+/* FAQ section title styling */
+#faqs h1{
+    margin: 30px 0;
+}
+
+/* General FAQ section styling */
+.faq{
+    border: 1px solid #2c2c2c;
+    margin: 5px 50px;
+    padding: 0;
+    background-color: #d1cece;
+}
+
+/* Styling for individual FAQ element */
+.faq div{
+    background-color: #B7B4B4;
+}
+
+/* Styling for the FAQ open button */
+.faq-open{
+    position: relative;
+    background-color: inherit;
+    border: none;
+    width: 50px;
+    right: -95%;
+    bottom: 20px;
+    z-index: 1;
+}
+
+/* Styling for the FAQ close button */
+.faq-close{
+    position: relative;
+    background-color: inherit;
+    border: none;
+    width: 50px;
+    right: -95%;
+    bottom: 20px;
+    z-index: 1;
+    display: none;
+}
+
+/* Inner icon styling for the FAQ open and close buttons */
+.faq-open i, .faq-close i{
+    font-size: 35px;
+}
+
+/* Styling for the FAQ text */
+.faq p{
+    display: none;
+    background-color: #d1cece;
+    text-align: left;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+.faq p > a{
+    color: #0a0eec;
+    text-decoration: none;
+}
+
+.faq p > a:hover{
+    text-decoration: underline;
+}
+
+/* Our Programs Page Styling*/
+/* Programs Page Introduction */
+#programs-intro{
+    margin: 2em;
+    text-align: center;
+    font-family: Helvetica, Courier, sans-serif;
+}
+
+#programs-intro dl, #programs-intro p{
+    text-align: left;
+}
+
+/* General main programs list styling */
+.main-programs ul{
+    list-style: none;
+}
+
+.main-programs{
+    margin-bottom: 50px;
+    overflow: hidden;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #00000044;
+}
+
+/* Main programs titles' styling */
+.main-programs h1{
+    margin: 1em;
+}
+
+/* Specific styling for the specific program elements */
+.program-one, .program-two{
+    position: relative;
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    height: fit-content;
+    background-color: #cfcbcb;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    right: -100px;
+    font-family: Helvetica, Courier, sans-serif;
+}
+
+/* Specific styling for the specific program elements' images */
+.program-one img, .program-two img{
+    width: 30%;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+/* Styling for the JS added classes that allow the program elements to slide in */
+.program-one.slide-in, .program-two.slide-in{
+    animation-name: programslide;
+    animation-duration: 3s;
+}
+
+/* Program slide in animation */
+@keyframes programslide{
+    from{right: -1200px}
+    to{right: -100px}
+}
+
+/* Styling for the load more buttons */
+[id^='load-more-button']{
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    margin-left: 45%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Careers Page Styling */
+/* Top image section styling */
+#head-image{
+    margin: 10px;
+    height: fit-content;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 0;
+}
+
+/* Styling for the image */
+#careers-header-image{
+    height: fit-content;
+    font-size: 20px;
+}
+
+#careers-header-image img{
+    height: 500px;
+    width: 100%;
+}
+
+/* Careers section styling */
+/* Careers section title styling */
+#careers h2{
+    margin-top: 1em;
+    text-align: center;
+}
+
+/* Styling for the general area where the career elements are */
+#careers-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    margin-left: 5%;
+    z-index: 0;
+}
+
+/* Stying for the specific career elements */
+.career-item{
+    width: 25%;
+    background-color: #86B6FE;
+    text-align: center;
+    border-radius: 25px;
+    border: 1px solid #000000;
+    margin: 20px;
+    padding: 10px;
+    font-family: Helvetica, Courier, sans-serif;
+}
+
+/* Styling for the join button */
+.join-button{
+    height: 50px;
+    border: none;
+    background-color: #fc0303;
+    color: #000000;
+    border-radius: 10px;
+    margin-bottom: 1%;
+    padding: 5px 20px;
+    animation: sizechange 2s infinite;
+    box-shadow: 0 0 5px 5px rgb(170, 97, 109);
+}
+
+/* Animation that makes the join buttons pulsate */
+@keyframes sizechange{
+    0%{transform: scale(1);}
+    50%{transform: scale(1.3);}
+    100%{transform: scale(1);}
+}
+
+/* Selection Form Styling */
+/* Creating the background that blurs the rest of the information when form is displayed */
+#form-background{
+    width: 100%;
+    height: 100%;
+    background-color: #534c4c91;
+    position: absolute;
+    position: fixed;
+    top: 0;
+    display: none;
+    z-index: 3;
+}
+
+/* General form styling */
+#selection-form{
+    position: absolute;
+    position: fixed;
+    width: 60%;
+    height: 100%;
+    background-color: #013B92;
+    font-size: 16px;
+    margin-left: 20%;
+    margin-top: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+    color: #ffffff;
+    display: none;
+    z-index: 3;
+    overflow: scroll;
+}
+
+/* Styling for the form's introductory title and text */
+[id^=selection-form] h3, p {
+    margin: 1em auto;
+    text-align: center;
+}
+
+/* Styling for the general form input area */
+#signup-form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+#signup-form fieldset {
+    border: none;
+    padding: 2rem 0;
+}
+
+/* Styling for the input labels */
+.signup-label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+/* Styling for the input elements */
+.signup-label input, select{
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+    background-color: #0b3257;
+    border: 1px solid #4391da;
+    color: #ffffff;
+}
+
+[id^=selection-form] textarea{
+    width: 100%;
+    height: 150px;
+}
+
+.required-input::after{
+    content: ' *';
+    color: red;
+    position: relative;
+    margin: 1px 0px 0px 0px;
+    font-size: 20px;
+    padding: 0 5px 0 0;
+}
+
+/* Styling for the submit button */
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1.5em 20%;
+    font-size: 1.5rem;
+    background-color: #0b3257;
+    color: #f5f6f7;
+    border-color: white;
+}
+
+/* Styling for the button for closing the form */
+#close_form{
+    background-color: rgb(253, 6, 6);
+    border: 1px solid #000000;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+/* Form Submitted page styling */
+#form-submitted{
+    text-align: center;
+    margin: 50px 50px;
+    background-color: #86B6FE;
+    padding: 200px 0;
+}
+
+/* Success Stories page styling */
+/* Top video styling */
+#top-video video{
+    width: 60%;
+    height: 100%;
+    margin-left: 20%; /*Centering the video*/
+    position: relative;
+    margin-top: 20px;
+    z-index: 0;
+}
+
+/* Success stories section general styling */
+#success-stories{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 1000px;
+    animation-duration: 3s;
+    background-color: #5e5a5a1e;
+    font-family: Helvetica, Courier, sans-serif;
+    z-index: 0;
+}
+
+/* Success stories header styling */
+#success-stories-header{
+    height: fit-content;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: #86B6FE;
+    margin-top: 10px;
+    padding: 20px;
+    font-size: 40px;
+    text-align: center;
+}
+/* Styling for the stories paragraphs */
+.stories p{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 50px;
+}
+
+/* Styling for the images of the girls in the stories */
+.stories img{
+    width: 40%;
+    height: 250px;
+    margin: 20px 30%;
+}
+
+/* Animation for the stories section slide in */
+@keyframes bottomslide{
+    from{margin-top: 1000px;}
+    to{margin-top: 50px;}
+}
+
+/* Events page Styling */
+/* Events page header */
+#event-page-header{
+    height: fit-content;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: #86B6FE;
+    margin-top: 10px;
+    padding: 20px;
+    font-size: 40px;
+    text-align: center;
+}
+
+/* Events page general styling */
+#events-list{
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    background-color: #3786cf31;
+    padding: 20px 20px;
+    overflow: hidden;
+}
+
+#events-list h2{
+    text-align: center;
+}
+
+/* Individual events page items styling */
+.event-item{
+    display: inline-block;
+    margin-top: 10px;
+    width: 100%;
+    overflow: hidden;
+    height: fit-content;
+    position: relative;
+    left: -1500px;
+    z-index: 0;
+}
+
+/* Styling for the events paragraphs */
+.event-item > p{
+    text-align: left;
+    font-family: Helvetica, Courier, sans-serif;
+}
+
+[class^='text-']{
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 50px;
+}
+
+/* Styling for the events images */
+[class^='img-'] img{
+    height: 80%;
+    width: 100%;
+}
+
+.img-left{
+    float: left;
+    width: 40%;
+    height: 300px;
+    margin-right: 10%;
+}
+
+.img-right{
+    float: right;
+    width: 40%;
+    height: 300px;
+    margin-left: 10%;
+}
+
+/* Styling for the JS added class that allows the events items to slide in */
+.event-item.activeleft{
+    animation-name: eventSlideInLeft;
+    animation-duration: 3s;
+}
+
+/* Events slide in animation */
+@keyframes eventSlideInLeft{
+    from{left: -1500px;}
+    to{left: 10px;}
+}
+
+/* Styling for the divider between events elements */
+.hr-separator{
+    margin: 2em 0;
+}

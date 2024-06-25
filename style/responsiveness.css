@@ -1,0 +1,341 @@
+/* Navbar Responsiveness */
+/* For mobile screens */
+/*[2]W3schools.com, 'How TO - Responsive Top Navigation', 1999.[Online]. Available: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp [Accessed: 09- Feb- 2024]*/
+@media screen and (max-width: 425px){
+    .navbar-nav li {display: none;} /* Set the navbar links to not display */
+    /* Set the navbar icon to display */
+    .navbar-nav li.icon{
+        float: right;
+        display: block;
+    }
+
+    /* Setting the navbar height to adjust based on whether the icon is visible only or the actual links too */
+    #navbar{
+        height: fit-content;
+    }
+
+    /* Allow the navbar links to appear when the icon is tapped */
+    .navbar-nav.responsive{position: relative;}
+    .navbar-nav.responsive li.icon{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .navbar-nav.responsive li{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .navbar-nav.responsive{
+        height: fit-content;
+        background-color: #ffffff;
+        z-index: 1;
+    }
+}
+
+/*Header Responsiveness*/
+/* For mobile phones */
+@media screen and (max-width: 425px){
+    /* Make the header to slide in a shorter distance so that it still appears on small screens */
+    #header_slide{
+        left: 0;
+    }
+
+    @keyframes headerslide{
+        from {left: -120px;}
+        to{left: 0;}
+    }
+}
+
+/* Footer Responsiveness */
+/* For mobile phones */
+@media screen and (max-width: 425px) {
+    /* Change the grid template area setting to allow the last three elements to be aligned in a column */
+    footer{
+        grid-template-areas: 
+            'top top top top top top'
+            'middle middle middle middle middle middle'
+            'bottom1 bottom1 bottom1 bottom1 bottom1 bottom1'
+            'bottom2 bottom2 bottom2 bottom2 bottom2 bottom2'
+            'bottom3 bottom3 bottom3 bottom3 bottom3 bottom3';
+        gap: 10px;
+    }
+
+    /* Set the social media links section to have a flex column instead of row display */
+    #social-media div{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+    }
+
+    /* Allow the header to fill the screen */
+    #social-media-header{
+        width: 100%;
+    }
+
+    /* Set the contact elements to appear in a column*/
+    #contact_section{
+        width: 60%;
+    }
+
+    /* Donation button section styling */
+    #donation-button{
+        text-align: center;
+        flex-direction: column;
+    }
+}
+
+/* Home Page Responsiveness */
+/* About Us Section */
+/* Mobile Phones */
+@media screen and (max-width: 425px){
+    #about-us{
+        /* Remove side padding in about us section elements */
+        padding: 10px 0;
+    }
+
+    /* Center the about us section header */
+    #about-us-paragraph > h2{
+        margin-left: 3em;
+        margin-top: 10px;
+    }
+
+    #about-us-paragraph{
+        height: fit-content; /* Prevent text from spilling out of the about us section */
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Youtube video responsiveness for centering it */
+    #about-us-paragraph > iframe{
+        float: none;
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+/* Our Founders Section */
+/* Mobile Phone */
+@media screen and (max-width: 425px){
+    /* Centering and changing the alignment of the elements in the founders section */
+    #founders{
+        margin: 50px 0;
+        padding: 0;
+        grid-template-areas: 
+        'item1 item1 item1 item1 item1 item1'
+        'item2 item2 item2 item2 item2 item2'
+        'item3 item3 item3 item3 item3 item3'
+        'item4 item4 item4 item4 item4 item4';
+    }
+
+    /* Give the founder's information a column flex display and prevent content spilling out */
+    .item2{
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .founders-info{
+        width: 100%;
+        margin: 0;
+    }
+
+    /* Change the flex direction of the administrator section elements */
+    .item4{
+        flex-direction: row;
+    }
+
+    /* Adjust height to allow administrator section text not to spill out */
+    .item4 > article{
+        height: 96%;
+        margin-bottom: 0;
+    }
+}
+
+/* FAQ section */
+/* For mobile phones */
+@media screen and (max-width: 425px){
+    /* Keep the FAQ open and close buttons within the div element */
+    .faq-open, .faq-close{
+        right: -70%;
+        margin-top: 15px;
+    }
+
+    /* Center FAQ elements */
+    .faq{
+        margin-right: 50px;
+    }
+}
+
+/* For tablets */
+@media screen and (min-width: 425px) and (max-width: 768px){
+    /* Keep the FAQ open and close buttons within the div element */
+    .faq-open, .faq-close{
+        right: -90%;
+        margin-top: 10px;
+    }
+}
+
+/* Our Programs Page Responsiveness */
+/*For mobile phones*/
+/* Main Programs Section */
+@media screen and (max-width: 425px){
+    /* Centering the program elements */
+    .program-one, .program-two{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        font-size: small;
+        text-align: center;
+        right: -20px;
+    }
+
+    @keyframes programslide{
+        from{right: -1200px}
+        to{right: -20px}
+    }
+
+    .program-one img, .program-two img{
+        width: 100%;
+    }
+
+    /* Remove the load more button */
+    [id^='load-more-button']{
+        display: none;
+    }
+}
+
+/* For Tablet Screens */
+@media screen and (min-width: 425px) and (max-width: 768px){
+    /* Centering the program elements */
+    .program-one .program-two{
+        height: fit-content;
+        font-size: small;
+        right: 100px;
+    }
+
+    /* Centering the load more button */
+    [id^='load-more-button']{
+        margin-left: 45%;
+    }
+}
+
+/* Careers Page Responsiveness */
+/* For mobile phones */
+@media screen and (max-width: 426px){
+    /* Centering the careers elements */
+    #careers-list{
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .career-item{
+        width: 80%;
+        margin: 20px 10%;
+    }
+}
+
+/* For tablets */
+@media screen and (min-width: 425px) and (max-width: 768px){
+    /* Centering the careers elements */
+    .career-item{
+        width: 40%;
+    }
+}
+
+/* Selection Form Section */
+/* For tablets */
+@media screen and (min-width: 426px) and (max-width: 768px){
+    #selection-form{
+        width: 60%;
+        padding: 0 10px;
+        margin-left: 20%;
+        height: 90%;
+        top: 5%;
+    }
+}
+
+/* For mobile phones */
+@media screen and (max-width: 425px){
+    /* Reducing the size of the selection form elements to fit on small screens */
+    #selection-form{
+        width: 90%;
+        margin-left: 5%;
+        height: 100%;
+        top: 0;
+        margin-top: 0;
+    }
+
+    .signup-label input, select{
+        width: 80%;
+    }
+
+    [id^=selection-form] textarea{
+        width: 80%;
+    }
+    
+    input[type="submit"]{
+        margin: 0.5em 10%;
+    }
+
+    #signup-form fieldset {
+        padding: 0.5rem 0;
+    }
+
+    #close_form{
+        font-size: 15px;
+    }
+}
+
+/* Success Stories page responsiveness */
+/* Top video styling for mobile phones*/
+@media screen and (max-width: 425px){
+    /* Allow the top video to fill the screen */
+    #top-video video{
+        width: 100%;
+        margin-left: 0;
+        height: 200px;
+    }
+
+    /* Increase the size of the images for proper centering */
+    .stories img{
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+/* Events Page responsiveness */
+/* For mobile phones */
+@media screen and (max-width: 425px){
+    /* Allow the event elements to fill the screen */
+    #events-list{
+        width: 100%;
+        margin: 5% 0;
+        padding: 20px 0;
+    }
+
+    /* Set event items into a column appearance to allow them to fit properly */
+    .event-item{
+        display: flex;
+        flex-direction: column;
+        left: -1000px;
+    }
+
+    /* Setting the event image above the event text */
+    [class^='img-']{
+        float: none;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    [class^='text-']{
+        margin: 0;
+        width: 100%;
+        padding: 50px 0;
+    }
+}
