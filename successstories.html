@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CheshireHome</title>
+        <link rel="icon" type="image/x-icon" href="/media/logo.jpg">
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Children's home, children, kids, orphanage">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="/style/responsiveness.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./javascript/navbarresponsiveness.js"></script>
+        <script src="javascript/navbarstick.js"></script>
+    </head>
+    
+    <body>
+        <!-- Page header containing the navbar, font increasing buttons and a header banner -->
+        <header>
+            <!--Navigation bar-->
+            <!-- Bootstrap styling used. 
+                [1]getbootstrap.com 'Navbar', 2011.[Online]. Available:https://getbootstrap.com/docs/4.0/components/navbar/. [Accessed: 09- Feb- 2024] -->
+            <nav class="navbar navbar-expand-sm" id="navbar">
+                <div class="container-fluid">
+                    <!--Logo-->
+                    <img src="./media/logo.jpg" alt="Site Logo" style="width:40px;" class="rounded-pill">
+                    <!--Navbar links-->
+                    <ul class="navbar-nav" id="nav-links">
+                        <li class="nav-item" id="nav_link_one"><a class="nav-link" href="index.html">Home</a></li> <!-- Home page link -->
+                        <li class="nav-item" id="nav_link_two"><a class="nav-link" href="ourprograms.html">Our Programs</a></li> <!-- Our programs page link -->
+                        <li class="nav-item" id="nav_link_three"><a class="nav-link" href="careers.html">Careers</a></li><!-- Careers page link -->
+                        <li class="nav-item" id="nav_link_four"><a class="nav-link" href="successstories.html">Success Stories</a></li><!-- Success stories link -->
+                        <li class="nav-item" id="nav_link_five"><a class="nav-link" href="events.html">Events</a></li><!-- Events page link -->
+
+                        <!-- [2]W3schools.com, 'How TO - Responsive Top Navigation', 1999.[Online]. Available: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp [Accessed: 09- Feb- 2024]-->
+                        <!-- Icon for opening the hidden navbar on mobile phones -->
+                        <li class="nav-item icon" id="nav_link_six">
+                            <a href="javascript:void(0);" onclick="navbarOpen()">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Header Banner -->
+            <section id="head_banner" role="banner">
+                <!-- Slide in element displaying the name and motto of the home at the top of every page -->
+                <div id="header_slide">
+                    <h1>Limuru Cheshire Home</h1><!-- Home name -->
+                    <p>They deserve to live with dignity</p><!-- Home motto -->
+                </div>
+            </section>
+        </header>
+
+        <!-- Main page content -->
+        <main>
+            <!-- Top video section -->
+            <div id="top-video">
+                <video controls preload="metadata">
+                    <source src="media/clideo-editor-fd1a77692caf4256a9672f467a49cc4d_HZgQxTev.mp4" type="video/mp4"> <!-- Video by Consolata Banda explaining the work done at LCH -->
+                    <track kind="captions" src="media/captions.vtt" srclang="en" label="English"><!-- Captions for the website -->
+                    Your browser doesn't support video tag<!-- Text to be displayed if user browser doesn't support video tag -->
+                </video>
+            </div>
+
+            <!-- Success stories section -->
+            <section id="success-stories">
+                <h2 id="success-stories-header">Our Stories</h2>
+                <!-- First story section -->
+                <article class="stories">
+                    <!-- Name of the girl in the first story -->
+                    <h3>Salima's Story</h3>
+                    <!-- Image depicting the person in the first story -->
+                    <img src="media/salima.PNG" alt="Salima smiling and standing infront of the dormitory">
+                    <!-- First story text -->
+                    <p>
+                        Salima was born with a disability that caused her father to detest her existence to the point that he would have rather had her thrown than continue to live with her as his daughter. The abuse from her father got so severe that at some point, Salima considered suicide by throwing herself from a tall building.<br>
+                        Thankfully, she has a supporting mother who accepts her as she is. Her mother constantly encouraged her by telling her that, <q>One day, my child, your life will change.</q> Her predictions came to when she was accepted into <abbr>LCH</abbr>. Here, she found a community of people who love and value her despite her challenges.<br>
+                        Since joining the Home, Salima has been able to transform her life. She has learned many valuable skills that will enable her to live a fulfilling life in the future. She mostly enjoys beadwork, a task that she has become extremely skilled at.<br>
+                        Salima has dreams of starting her own knitting and beadwork business after graduating from <abbr>LCH</abbr>. She longs to support her mother by building for her a home with solar power and water thus alleviating her from the state of poverty that she has raised Salima in.<br>
+                    </p>
+                </article>
+
+                <!-- Second story section -->
+                <article class="stories">
+                    <!-- Name of the girl in the second story -->
+                    <h3>Joy's Story</h3>
+                    <!-- Image depicting the person in the second story -->
+                    <img src="media/joy.PNG" alt="Joy smiling while playing with some bottletops">
+                    <!-- Second story text -->
+                    <p>
+                        Joy has resided at Limuru Cheshire Home alongside over 50 other girls for the past two years. This home provides refuge from her impoverished household in Deep Sea, an extensive informal settlement situated on the outskirts of Nairobi, Kenya’s capital city in the northwest<br>
+                        According to Sr. Rose Catherine Wakibiru, the Administrator of <abbr>LCH</abbr>, <q>The 19-year-old is intellectually challenged and is the most normal child in a family of seven children. Joy’s mother has an intellectual disability as well. And all her seven children have one or the other disability. The only healthy member of Joy’s family is her father who does menial jobs in the slums to provide for his big family</q><br>
+                        Despite her special needs, Joy attempted to go to a regular school but dropped out when she found it difficult to keep up with other children who didn’t have special needs.<br>
+                        <q>I always came last in class from the time I started going to school. Teachers always punished me, thinking I chose to be a slow learner</q>, Joy recalls. This was before she reverted to begging on the streets to try and help her father provide for their family.<br>
+                        She was eventually rescued by <abbr>ACI</abbr> and brought to the Home. She has enjoyed her stay here so much that she can barely fathom the thought of graduating and leaving the Home.<br>
+                        Joy has undertaken training in dressmaking, bakery as well as computer literacy and her work has won admiration from many of the visitors of the home. She finally graduated from the home on the 25<sup>th</sup> of December 2020. She has been able to start her own business and support her family through it.
+                    </p>
+                </article>
+
+                <!-- Third story section -->
+                <article class="stories">
+                    <!-- Name of the girl in the third story -->
+                    <h3>Third Story</h3>
+                    <!-- Image depicting the person in the third story -->
+                    <img src="media/random.PNG" alt="A girl sitting at the sewing machine working on a purple peice of clothe">
+                    <!-- Third story text -->
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque egestas congue quisque egestas diam.<br>
+                        Sit amet porttitor eget dolor morbi non arcu. Nunc faucibus a pellentesque sit amet porttitor eget. Amet mauris commodo quis imperdiet massa tincidunt nunc. Aliquet porttitor lacus luctus accumsan tortor posuere ac ut. Eget magna fermentum iaculis eu non diam. Habitant morbi tristique senectus et.<br>
+                        Adipiscing enim eu turpis egestas. Faucibus pulvinar elementum integer enim neque volutpat. Quam pellentesque nec nam aliquam sem et tortor consequat. Elementum eu facilisis sed odio morbi quis. Proin sed libero enim sed faucibus turpis. Dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida.<br>
+                        Sit amet venenatis urna cursus eget nunc scelerisque viverra. Tempus iaculis urna id volutpat lacus laoreet. Pharetra magna ac placerat vestibulum lectus mauris ultrices eros. Aliquam faucibus purus in massa tempor nec.
+                    </p>
+                </article>
+            </section>
+        </main>
+
+        <!--Footer-->
+        <footer>
+            <!-- Prompt to get people to donate to the mission -->
+            <section id="donation-button">
+                <div>
+                    <h3 id="footer-donate-message">Donate to our mission: </h3>
+                </div>
+                <div>
+                    <!-- Donate button -->
+                    <!-- Bootstrap styling used. 
+                    [3]getbootstrap.com 'Buttons', 2011.[Online]. Available:https://getbootstrap.com/docs/4.0/components/buttons/. [Accessed: 09- Feb- 2024] -->
+                    <!-- [1]A.Toky, 'How can I make a button link to another page?'(Answer 3), 2019.[Source code]. https://stackoverflow.com/a/55384256-->
+                    <button type="button" class="btn btn-danger donate-button footer-donate-button" onclick='window.location.href ="https://www.cheshiredisabilityservices.org/donate/"'>DONATE</button>
+                </div>
+            </section>
+
+            <!-- Social Media Links -->
+            <section id="social-media">
+                <!-- Left section containing text -->
+                <div id="social-media-header">
+                    <h2>Get connected with us on facebook:</h2><!-- Text describing the social media section -->
+                </div>
+
+                <!-- Right section containing social media links -->
+                <div id="social-media-links">
+                        <!-- Facebook -->
+                        <!-- [1]A.Toky, 'How can I make a button link to another page?'(Answer 3), 2019.[Source code]. https://stackoverflow.com/a/55384256-->
+                        <button id="facebook" onclick='window.location.href="https://web.facebook.com/profile.php/?id=100063478835319&_rdc=1&_rdr"'><i class="fa fa-facebook-f"></i></button>
+                </div>
+            </section>
+
+            <!-- Other Necessary Links-->
+            <!-- More info First Column links -->
+            <div class="more_info_one">
+                    <h2>More Info</h2>
+                    <!-- About us link -->
+                    <a href="index.html#about-us" class="links">About Us</a>
+                    <!-- FAQs link -->
+                    <a href="index.html#faqs" class="links">FAQ</a>
+                    <!-- Our Founders Link -->
+                    <a href="index.html#founders" class="links"> Our Founders</a>
+            </div>
+
+            <!-- More Info Second Column Information-->
+            <div class="more_info_two">
+                    <h2>More Info</h2>
+                    <!-- Agenda link -->
+                    <a href="https://www.cheshiredisabilityservices.org/resources/" class="links" target="_blank">Our Agenda</a>
+                    <!-- Latest News link -->
+                    <a href="https://www.aciafrica.org/tag/limuru-cheshire-home" class="links" target="_blank">Latest News</a>
+                    <!-- CDSK Link -->
+                    <a href="https://www.cheshiredisabilityservices.org/" class="links" target="_blank">CDSK</a>
+            </div>
+
+            <!-- Contact Us Section -->
+            <div id="contact_section">
+                <!--Contacts-->
+                <div id="contacts">
+                    <h2>Contact Us</h2>
+                    <address>
+                        <!-- Email -->
+                        <!--[1]Hubspot.com, 'Create a click-to-call or mailto link', 2023.[Online]. Available: 'https://knowledge.hubspot.com/website-pages/create-a-click-to-call-or-mailto-link#:~:text=In%20the%20rich%20text%20toolbar%2C%20click%20the%20link,your%20mailto%20link%2C%20starting%20with%20the%20email%20address.'-->
+                        <span>By email at: <a href="mailto:limurucheshirehome@gmail.com" class="links">limurucheshirehome@gmail.com</a></span>
+                        <!-- Phone contact -->
+                        <!--[1]Hubspot.com, '4 Steps to Add a Clickable Telephone Link in HTML', 2022.[Online]. Available: 'https://blog.hubspot.com/website/html-telephone-link'-->
+                        <span>By phone using: <a href="tel:+254724693418" class="links">+245724693418</a></span>
+                    </address>
+                </div>
+            </div>
+        </footer>        
+
+        <!-- Script for the slide in animation -->
+        <script src="javascript/successstoriesanimation.js"></script>
+        <!-- Script for the font controls-->
+        <script src="javascript/fontcontrols.js"></script>
+    </body>
+    
+</html>

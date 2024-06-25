@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CheshireHome</title>
+        <link rel="icon" type="image/x-icon" href="/media/logo.jpg">
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Children's home, children, kids, orphanage">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="/style/responsiveness.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./javascript/navbarresponsiveness.js"></script>
+        <script src="javascript/navbarstick.js"></script>
+    </head>
+    
+    <body>
+        <!-- Page header containing the navbar, font increasing buttons and a header banner -->
+        <header>
+            <!--Navigation bar-->
+            <!-- Bootstrap styling used. 
+                [1]getbootstrap.com 'Navbar', 2011.[Online]. Available:https://getbootstrap.com/docs/4.0/components/navbar/. [Accessed: 09- Feb- 2024] -->
+            <nav class="navbar navbar-expand-sm" id="navbar">
+                <div class="container-fluid">
+                    <!--Logo-->
+                    <img src="./media/logo.jpg" alt="Site Logo" style="width:40px;" class="rounded-pill">
+                    <!--Navbar links-->
+                    <ul class="navbar-nav" id="nav-links">
+                        <li class="nav-item" id="nav_link_one"><a class="nav-link" href="index.html">Home</a></li> <!-- Home page link -->
+                        <li class="nav-item" id="nav_link_two"><a class="nav-link" href="ourprograms.html">Our Programs</a></li> <!-- Our programs page link -->
+                        <li class="nav-item" id="nav_link_three"><a class="nav-link" href="careers.html">Careers</a></li><!-- Careers page link -->
+                        <li class="nav-item" id="nav_link_four"><a class="nav-link" href="successstories.html">Success Stories</a></li><!-- Success stories link -->
+                        <li class="nav-item" id="nav_link_five"><a class="nav-link" href="events.html">Events</a></li><!-- Events page link -->
+
+                        <!-- [2]W3schools.com, 'How TO - Responsive Top Navigation', 1999.[Online]. Available: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp [Accessed: 09- Feb- 2024]-->
+                        <!-- Icon for opening the hidden navbar on mobile phones -->
+                        <li class="nav-item icon" id="nav_link_six">
+                            <a href="javascript:void(0);" onclick="navbarOpen()">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Header Banner -->
+            <section id="head_banner" role="banner">
+                <!-- Slide in element displaying the name and motto of the home at the top of every page -->
+                <div id="header_slide">
+                    <h1>Limuru Cheshire Home</h1><!-- Home name -->
+                    <p>They deserve to live with dignity</p><!-- Home motto -->
+                </div>
+            </section>
+        </header>
+
+        <!-- Main page content -->
+        <main>
+            <!-- Image slideshow section-->
+            <section id="homepage-top">
+                <!-- Top Image Slideshow -->
+                <div id="slideshow">
+                    <div id="slideshow-div">
+                        <img src="./media/img.jfif" alt="One of the nuns feeding the girls at the center"> <!-- First Image -->
+                        <img src="./media/img1.jfif" alt="An image of two girls who live at the center, one in uniform and the other in a flowered dress"> <!-- Second Image -->
+                        <img src="./media/img2.jfif" alt="The nuns working at the home receive a donation of coffee and T-shirts from Maccoffee"> <!-- Third image -->
+                        <img src="./media/limarustory022020_1581328028.webp" alt="The girls living at the home pose for a picture infront of the center's main hall looking stunning in uniform"> <!-- Fourth Image -->
+                    </div>
+                </div>
+
+                <!-- Donate section to be displayed at the bottom of the slideshow -->
+                <div id="homepage-top-donate">
+                    <h2>Donate to our mission:</h2>
+                    <!-- Bootstrap styling used. 
+                    [1]getbootstrap.com 'Buttons', 2011.[Online]. Available:https://getbootstrap.com/docs/4.0/components/buttons/. [Accessed: 09- Feb- 2024] -->
+                    <!-- [1]A.Toky, 'How can I make a button link to another page?'(Answer 3), 2019.[Source code]. https://stackoverflow.com/a/55384256-->
+                    <button type="button" class="btn btn-danger donate-button footer-donate-button" onclick='window.location.href ="https://www.cheshiredisabilityservices.org/donate/"'>DONATE</button>
+                </div>
+            </section>
+
+            <!-- About Us Section -->
+            <article id="about-us">
+                <div id="about-us-paragraph">
+                    <!-- Youtube video giving an explanation of what the Home is about -->
+                    <iframe src="https://www.youtube.com/embed/s8p7iHr93Qs?si=NnbNFMmrZNrcj9fC" title="Limuru Cheshire Home for Girls with Disabilities, Kenya" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <!-- Article explaining what the Home is about-->
+                    <div>
+                        <!-- About us section header -->
+                        <h2>About Us</h2>
+                        <p>
+                            Nestled on a sprawling piece of land in a tranquil rural area near Limuru, within Kenya’s Kiambu County and under the jurisdiction of the <em>Archdiocese of Nairobi</em>, stands <em>Limuru Cheshire Home</em>. This compassionate institution provides care and support for young girls who face physical and intellectual challenges. Girls hailing from various regions across East Africa seek refuge at this institution, hoping to find solace amidst their challenges. The community-based empowerment facility hosts 60 girls, all of whom grapple with either physical disabilities or intellectual impairments.
+                            <br>
+                            The institution provides an empowerment program that encompasses vocational training. The girls actively participate in activities like dressmaking, cookery, knitting, and beadwork. Additionally, they receive physiotherapy and counseling. Rehabilitation services are available to support them, enabling them to live with dignity. Furthermore, the institution conducts comprehensive community outreach programs to raise awareness about these girls.
+                            <br>
+                            Originally established as a residence for cancer patients, the Limuru facility transformed in 1972 to become a home for girls facing physical challenges. In 1986, it came under the management of <em>ASN (Archdiocese of Nairobi)</em>, and today, it is one of the four institutions registered under <em>Cheshire Disability Services Kenya (CDSK)</em>.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Founders section -->
+            <section id="founders">
+                <!-- Founder Section Heading -->
+                <h2 class="item1">Our Founders</h2>
+                <div class="item2">
+                    <!-- Founder one's section -->
+                    <article class="founders-info">
+                        <!-- Image of founder one -->
+                        <img src="/media/geoffrey.jfif" alt="Leonard Cheshire: One of the founders of the cheshire home">
+                        <!-- Information about founder one -->
+                        <h3>Geoffrey Leonard Cheshire</h3><!-- Founder one name -->
+                        <p>
+                            Nearly five decades ago, World War II hero Geoffrey Leonard Cheshire, a distinguished veteran, founded the facility. <br> After the war, he dedicated himself to charitable endeavors, establishing communities for ex-service individuals. In subsequent years, he extended his efforts by constructing homes for cancer patients and people with various disabilities worldwide.<br> Before his passing in 1991 at the age of 74, Cheshire, who had served as an official British observer during the dropping of the atomic bomb on Nagasaki—an event aimed at ending the war in the Far East—had initiated charitable projects in 52 countries across the globe.
+                        </p><!-- Founder one information -->
+                    </article>
+
+                    <!-- Founder two's section -->
+                    <article class="founders-info">
+                        <!-- Image of founder two -->
+                        <img src="/media/chechire.jpg" alt="People from CDSK pose for a photo">
+                        <!-- Information about founder two -->
+                        <h3>Cheshire Disability Services</h3> <!-- Second founders name -->
+                        <p>
+                            After the facility was converted from a cancer facility to a home for disabled children, it was placed under the management of the Cheshire Disability Services. <br> This is an organization dedicated to disability inclusion. CDSK collaborates with a network of 41 Local Partner Organizations (POs) in Kenya. Their joint efforts focus on implementing programs in areas such as Community-Based Rehabilitation & Care, Inclusive Lifelong Education, Socio-economic Empowerment, Sexual Reproductive Health & Rights, and Institutional Development. Additionally, CDSK serves as a Strategic Partner Organization (SPO) for Liliane Fonds in Kenya
+                        </p><!-- Information on second founder -->
+                    </article>
+                </div>
+                <h2 class="item3">Leadership section</h2>
+                <div class="item4">
+                    <article class="admin">
+                        <h3>Sr. Anne Kamene - Administrator</h3>
+                        <p>
+                            Sr. Anne is a nun under the Assumption Sisters of Nairobi who has been serving at <abbr>ASN</abbr> for the past 20 years having joined the nunnery at 18yrs of age. She was posted to <abbr>LCH</abbr> 9yrs ago and has been working hard ever since to improve the lives of the girls.
+                        </p>
+                    </article>
+                    <article class="admin">
+                        <h3>Dr.Consolata Banda - Administrator</h3>
+                        <p>
+                            Sr. Consolata joined <abbr>ASN</abbr> when she was 20 years old and was taken through University before being posted to a number of children's homes throughout Kenya. She was posted to <abbr>LCH</abbr> in 2004 where she has stayed ever since developing a strong, tight bond with the girls who have passed under her care.
+                        </p>
+                    </article>
+                </div>     
+            </section>
+
+            <!-- FAQS section -->
+            <section id="faqs">
+                <!-- FAQs section header -->
+                <h1>FAQS</h1>
+                    <!-- First FAQ -->
+                    <div class="faq">
+                        <div>
+                            <!-- FAQ header -->
+                            <h4>How can I support <abbr>LCH</abbr></h4>
+                            <!-- Faq section open and close buttons -->
+                            <button class="faq-open" onclick="faqOpen(0)" aria-label="Button for expanding the faq paragraph"><i class="fa fa-angle-down"></i></button><!-- FAQ open button -->
+                            <button class="faq-close" onclick="faqClose(0)" aria-label="Button for collapsing the faq paragraph"><i class="fa fa-angle-up"></i></button><!-- FAQ close button -->
+                        </div>
+                        <!-- Faq explanatory text -->
+                        <p>
+                            You can consider donating to to CDSK through the donate button or directly to the <abbr>LCH</abbr> by contacting us using the email and phone number provided.
+                            <br>
+                            You can also support a child's education and welfare by directly sponsoring them. Please contact us for more information.You
+                        </p>
+                    </div>
+
+                    <!-- Second FAQ -->
+                    <div class="faq">
+                        <div>
+                            <!-- FAQ header -->
+                            <h4>Do you have other branches?</h4>
+                            <!-- Faq section open and close buttons -->
+                            <button class="faq-open" onclick="faqOpen(1)" aria-label="Button for expanding the faq paragraph"><i class="fa fa-angle-down"></i></button><!-- FAQ open button -->
+                            <button class="faq-close" onclick="faqClose(1)" aria-label="Button for collapsing the faq paragraph"><i class="fa fa-angle-up"></i></button><!-- FAQ close button -->
+                        </div>
+                        <!-- Faq explanatory text -->
+                        <p>
+                            <abbr>LCH</abbr> is a subsidiary of the greater Cheshire Disability Services Kenya that manages several homes geared to children living with disabilities.
+                            To see which of their homes is close to your location, visit their website <a href="https://www.cheshiredisabilityservices.org/cheshire-homes/">here</a>.
+                        </p>
+                    </div>
+
+                    <!-- Third FAQ -->
+                    <div class="faq">
+                        <div>
+                            <!-- FAQ header -->
+                            <h4>What is the process of admitting children to your home?</h4>
+                            <!-- Faq section open and close buttons -->
+                            <button class="faq-open" onclick="faqOpen(2)" aria-label="Button for expanding the faq paragraph"><i class="fa fa-angle-down"></i></button><!-- FAQ open button -->
+                            <button class="faq-close" onclick="faqClose(2)" aria-label="Button for collapsing the faq paragraph"><i class="fa fa-angle-up"></i></button><!-- FAQ close button -->
+                        </div>
+                        <!-- Faq explanatory text -->
+                        <p>
+                            If you have a child you would like to bring to the home, we recommend coming to our center with the child where we can assess the situation and provide you with a way forward. For more information on how to get to our center, contact us using the email or phone number linked below.
+                        </p>
+                    </div>
+
+                    <!-- Fourth FAQ -->
+                    <div class="faq">
+                        <div>
+                            <!-- FAQ header -->
+                            <h4>Do you allow visits to your home?</h4>
+                            <!-- Faq section open and close buttons -->
+                            <button class="faq-open" onclick="faqOpen(3)" aria-label="Button for expanding the faq paragraph"><i class="fa fa-angle-down"></i></button><!-- FAQ open button -->
+                            <button class="faq-close" onclick="faqClose(3)" aria-label="Button for collapsing the faq paragraph"><i class="fa fa-angle-up"></i></button><!-- FAQ close button -->
+                        </div>
+                        <!-- Faq explanatory text -->
+                        <p>
+                            We welcome everyone to visit us at <abbr>LCH</abbr> and we value our visitors greatly. We believe that as well as improving the lives of the children in our care, it is very important that we also enable society to understand that people living with disabilities are just like us by allowing people to visit the girls at our home. If you'd like to arrange a visit, kindly contact us in advance so that we can plan a date for the event.
+                        </p>
+                    </div>
+            </section>
+        </main>
+
+        <!--Footer-->
+        <footer>
+            <!-- Prompt to get people to donate to the mission -->
+            <section id="donation-button">
+                <div>
+                    <h3 id="footer-donate-message">Donate to our mission: </h3>
+                </div>
+                <div>
+                    <!-- Donate button -->
+                    <!-- Bootstrap styling used. 
+                    [3]getbootstrap.com 'Buttons', 2011.[Online]. Available:https://getbootstrap.com/docs/4.0/components/buttons/. [Accessed: 09- Feb- 2024] -->
+                    <!-- [1]A.Toky, 'How can I make a button link to another page?'(Answer 3), 2019.[Source code]. https://stackoverflow.com/a/55384256-->
+                    <button type="button" class="btn btn-danger donate-button footer-donate-button" onclick='window.location.href ="https://www.cheshiredisabilityservices.org/donate/"'>DONATE</button>
+                </div>
+            </section>
+
+            <!-- Social Media Links -->
+            <section id="social-media">
+                <!-- Left section containing text -->
+                <div id="social-media-header">
+                    <h2>Get connected with us on facebook:</h2><!-- Text describing the social media section -->
+                </div>
+
+                <!-- Right section containing social media links -->
+                <div id="social-media-links">
+                        <!-- Facebook -->
+                        <!-- [1]A.Toky, 'How can I make a button link to another page?'(Answer 3), 2019.[Source code]. https://stackoverflow.com/a/55384256-->
+                        <button id="facebook" onclick='window.location.href="https://web.facebook.com/profile.php/?id=100063478835319&_rdc=1&_rdr"'><i class="fa fa-facebook-f"></i></button>
+                </div>
+            </section>
+
+            <!-- Other Necessary Links-->
+            <!-- More info First Column links -->
+            <div class="more_info_one">
+                    <h2>More Info</h2>
+                    <!-- About us link -->
+                    <a href="index.html#about-us" class="links">About Us</a>
+                    <!-- FAQs link -->
+                    <a href="index.html#faqs" class="links">FAQ</a>
+                    <!-- Our Founders Link -->
+                    <a href="index.html#founders" class="links"> Our Founders</a>
+            </div>
+
+            <!-- More Info Second Column Information-->
+            <div class="more_info_two">
+                    <h2>More Info</h2>
+                    <!-- Agenda link -->
+                    <a href="https://www.cheshiredisabilityservices.org/resources/" class="links" target="_blank">Our Agenda</a>
+                    <!-- Latest News link -->
+                    <a href="https://www.aciafrica.org/tag/limuru-cheshire-home" class="links" target="_blank">Latest News</a>
+                    <!-- CDSK Link -->
+                    <a href="https://www.cheshiredisabilityservices.org/" class="links" target="_blank">CDSK</a>
+            </div>
+
+            <!-- Contact Us Section -->
+            <div id="contact_section">
+                <!--Contacts-->
+                <div id="contacts">
+                    <h2>Contact Us</h2>
+                    <address>
+                        <!-- Email -->
+                        <!--[1]Hubspot.com, 'Create a click-to-call or mailto link', 2023.[Online]. Available: 'https://knowledge.hubspot.com/website-pages/create-a-click-to-call-or-mailto-link#:~:text=In%20the%20rich%20text%20toolbar%2C%20click%20the%20link,your%20mailto%20link%2C%20starting%20with%20the%20email%20address.'-->
+                        <span>By email at: <a href="mailto:limurucheshirehome@gmail.com" class="links">limurucheshirehome@gmail.com</a></span>
+                        <!-- Phone contact -->
+                        <!--[1]Hubspot.com, '4 Steps to Add a Clickable Telephone Link in HTML', 2022.[Online]. Available: 'https://blog.hubspot.com/website/html-telephone-link'-->
+                        <span>By phone using: <a href="tel:+254724693418" class="links">+245724693418</a></span>
+                    </address>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Script for opening and closing the faqs-->
+        <script src="/javascript/faqsection.js"></script>
+        <!-- Script for the font controls-->
+        <script src="javascript/fontcontrols.js"></script>
+    </body>
+    
+</html>

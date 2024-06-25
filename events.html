@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CheshireHome</title>
+        <link rel="icon" type="image/x-icon" href="/media/logo.jpg">
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Children's home, children, kids, orphanage">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="/style/responsiveness.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./javascript/navbarresponsiveness.js"></script>
+        <script src="javascript/navbarstick.js"></script>
+    </head>
+    
+    <body>
+        <!-- Page header containing the navbar, font increasing buttons and a header banner -->
+        <header>
+            <!--Navigation bar-->
+            <!-- Bootstrap styling used. 
+                [1]getbootstrap.com 'Navbar', 2011.[Online]. Available:https://getbootstrap.com/docs/4.0/components/navbar/. [Accessed: 09- Feb- 2024] -->
+            <nav class="navbar navbar-expand-sm" id="navbar">
+                <div class="container-fluid">
+                    <!--Logo-->
+                    <img src="./media/logo.jpg" alt="Site Logo" style="width:40px;" class="rounded-pill">
+                    <!--Navbar links-->
+                    <ul class="navbar-nav" id="nav-links">
+                        <li class="nav-item" id="nav_link_one"><a class="nav-link" href="index.html">Home</a></li> <!-- Home page link -->
+                        <li class="nav-item" id="nav_link_two"><a class="nav-link" href="ourprograms.html">Our Programs</a></li> <!-- Our programs page link -->
+                        <li class="nav-item" id="nav_link_three"><a class="nav-link" href="careers.html">Careers</a></li><!-- Careers page link -->
+                        <li class="nav-item" id="nav_link_four"><a class="nav-link" href="successstories.html">Success Stories</a></li><!-- Success stories link -->
+                        <li class="nav-item" id="nav_link_five"><a class="nav-link" href="events.html">Events</a></li><!-- Events page link -->
+
+                        <!-- [2]W3schools.com, 'How TO - Responsive Top Navigation', 1999.[Online]. Available: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp [Accessed: 09- Feb- 2024]-->
+                        <!-- Icon for opening the hidden navbar on mobile phones -->
+                        <li class="nav-item icon" id="nav_link_six">
+                            <a href="javascript:void(0);" onclick="navbarOpen()">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Header Banner -->
+            <section id="head_banner" role="banner">
+                <!-- Slide in element displaying the name and motto of the home at the top of every page -->
+                <div id="header_slide">
+                    <h1>Limuru Cheshire Home</h1><!-- Home name -->
+                    <p>They deserve to live with dignity</p><!-- Home motto -->
+                </div>
+            </section>
+        </header>
+
+        <!-- Main page content -->
+        <main>
+            <!-- Events page header -->
+            <section id="event-page-header" role="banner">
+                <h1>Our Events</h1>
+            </section>
+
+            <!-- Events list page section -->
+            <section id="events-list" role="feed">
+                <h2>Events list</h2>
+                <article class="event-item">
+                    <!-- First event image -->
+                    <figure class="img-left">
+                        <img src="media/graduation.jfif" alt="Girls at the home along with their carers celebrating their pre graduation ceremony.">
+                        <figcaption>The girls celebrate a pre-graduation ceremony</figcaption><!-- Image caption -->
+                    </figure>
+                    <!-- First event title -->
+                    <h3>30<sup>th</sup> Graduation Ceremony</h3>
+                    <!-- First event information -->
+                    <p>
+                        We are pleased to announce that <abbr>LCH</abbr> will be holding its 30<sup>th</sup> annual graduation ceremony this March. We welcome all of the girls' relatives as well as well-wishers to come and celebrate this amazing milestone in the girls' lives
+                    </p>
+                    <br>
+                    <!-- First event date and time-->
+                    <time>10:00</time>
+                    <br>
+                    <p>30<sup>th</sup> March, 2024</p>
+                </article>
+                
+                <!-- Divider -->
+                <hr class="hr-separator">
+
+                <article class="event-item">
+                    <!-- Second event image -->
+                    <figure class="img-right">
+                        <img src="media/talentshow.PNG" alt="A sister helping a girl with her bead work project">
+                        <figcaption>Sister Consolata helps one of the girls with her bead work project</figcaption><!-- Image caption -->
+                    </figure>
+                    <!-- Second event title -->
+                    <h3>Annual Talent Show</h3>
+                    <!-- Second event information -->
+                    <p>
+                        We welcome all our well-wisher, parents, and neighbors to come and view the talented handiwork of our girls. There will be many artwork, textile, and beadwork projects on display. Our girls are very excited to show you their hard work throughout the past year.
+                    </p>
+                    <br>
+                    <!-- Second event date and time-->
+                    <time>12:00</time>
+                    <br>
+                    <p>19<sup>th</sup> September, 2024</p>
+                </article>
+
+                <!-- Divider -->
+                <hr class="hr-separator">
+
+                <article class="event-item">
+                    <!-- Third event image -->
+                    <figure class="img-left">
+                        <img src="media/facepainting.PNG" alt="A visitor does face painting on the girls">
+                        <figcaption>A visitor does face painting on the girls</figcaption><!-- Image caption -->
+                    </figure>
+                    <!-- Third event title -->
+                    <h3>Open Day</h3>
+                    <!-- Third event information -->
+                    <p>
+                        Along with improving the lives of the children at our home, we pave the way for them to live comfortably in society by educating the public on the fact that disability doesn't remove a person's humanity. For this reason, we invite the people in our local community to join us in an open day where the children get to interact with outsiders and the visitors get to see that disability isn't inability.
+                    </p>
+                    <br>
+                    <!-- Third event date and time-->
+                    <time>12:00</time>
+                    <br>
+                    <p>20<sup>th</sup> February, 2024</p>
+                </article>
+            </section>
+        </main>
+
+        <!--Footer-->
+        <footer>
+            <!-- Prompt to get people to donate to the mission -->
+            <section id="donation-button">
+                <div>
+                    <h3 id="footer-donate-message">Donate to our mission: </h3>
+                </div>
+                <div>
+                    <!-- Donate button -->
+                    <!-- Bootstrap styling used. 
+                    [3]getbootstrap.com 'Buttons', 2011.[Online]. Available:https://getbootstrap.com/docs/4.0/components/buttons/. [Accessed: 09- Feb- 2024] -->
+                    <!-- [1]A.Toky, 'How can I make a button link to another page?'(Answer 3), 2019.[Source code]. https://stackoverflow.com/a/55384256-->
+                    <button type="button" class="btn btn-danger donate-button footer-donate-button" onclick='window.location.href ="https://www.cheshiredisabilityservices.org/donate/"'>DONATE</button>
+                </div>
+            </section>
+
+            <!-- Social Media Links -->
+            <section id="social-media">
+                <!-- Left section containing text -->
+                <div id="social-media-header">
+                    <h2>Get connected with us on facebook:</h2><!-- Text describing the social media section -->
+                </div>
+
+                <!-- Right section containing social media links -->
+                <div id="social-media-links">
+                        <!-- Facebook -->
+                        <!-- [1]A.Toky, 'How can I make a button link to another page?'(Answer 3), 2019.[Source code]. https://stackoverflow.com/a/55384256-->
+                        <button id="facebook" onclick='window.location.href="https://web.facebook.com/profile.php/?id=100063478835319&_rdc=1&_rdr"'><i class="fa fa-facebook-f"></i></button>
+                </div>
+            </section>
+
+            <!-- Other Necessary Links-->
+            <!-- More info First Column links -->
+            <div class="more_info_one">
+                    <h2>More Info</h2>
+                    <!-- About us link -->
+                    <a href="index.html#about-us" class="links">About Us</a>
+                    <!-- FAQs link -->
+                    <a href="index.html#faqs" class="links">FAQ</a>
+                    <!-- Our Founders Link -->
+                    <a href="index.html#founders" class="links"> Our Founders</a>
+            </div>
+
+            <!-- More Info Second Column Information-->
+            <div class="more_info_two">
+                    <h2>More Info</h2>
+                    <!-- Agenda link -->
+                    <a href="https://www.cheshiredisabilityservices.org/resources/" class="links" target="_blank">Our Agenda</a>
+                    <!-- Latest News link -->
+                    <a href="https://www.aciafrica.org/tag/limuru-cheshire-home" class="links" target="_blank">Latest News</a>
+                    <!-- CDSK Link -->
+                    <a href="https://www.cheshiredisabilityservices.org/" class="links" target="_blank">CDSK</a>
+            </div>
+
+            <!-- Contact Us Section -->
+            <div id="contact_section">
+                <!--Contacts-->
+                <div id="contacts">
+                    <h2>Contact Us</h2>
+                    <address>
+                        <!-- Email -->
+                        <!--[1]Hubspot.com, 'Create a click-to-call or mailto link', 2023.[Online]. Available: 'https://knowledge.hubspot.com/website-pages/create-a-click-to-call-or-mailto-link#:~:text=In%20the%20rich%20text%20toolbar%2C%20click%20the%20link,your%20mailto%20link%2C%20starting%20with%20the%20email%20address.'-->
+                        <span>By email at: <a href="mailto:limurucheshirehome@gmail.com" class="links">limurucheshirehome@gmail.com</a></span>
+                        <!-- Phone contact -->
+                        <!--[1]Hubspot.com, '4 Steps to Add a Clickable Telephone Link in HTML', 2022.[Online]. Available: 'https://blog.hubspot.com/website/html-telephone-link'-->
+                        <span>By phone using: <a href="tel:+254724693418" class="links">+245724693418</a></span>
+                    </address>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Script for setting how the events slide in -->
+        <script src="/javascript/events.js"></script>
+        <!-- Script for the font controls-->
+        <script src="javascript/fontcontrols.js"></script>
+    </body>
+    
+</html>

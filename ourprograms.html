@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CheshireHome</title>
+        <link rel="icon" type="image/x-icon" href="/media/logo.jpg">
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Children's home, children, kids, orphanage">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="/style/responsiveness.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./javascript/navbarresponsiveness.js"></script>
+        <script src="javascript/navbarstick.js"></script>
+    </head>
+    
+    <body>
+        <!-- Page header containing the navbar, font increasing buttons and a header banner -->
+        <header>
+            <!--Navigation bar-->
+            <!-- Bootstrap styling used. 
+                [1]getbootstrap.com 'Navbar', 2011.[Online]. Available:https://getbootstrap.com/docs/4.0/components/navbar/. [Accessed: 09- Feb- 2024] -->
+            <nav class="navbar navbar-expand-sm" id="navbar">
+                <div class="container-fluid">
+                    <!--Logo-->
+                    <img src="./media/logo.jpg" alt="Site Logo" style="width:40px;" class="rounded-pill">
+                    <!--Navbar links-->
+                    <ul class="navbar-nav" id="nav-links">
+                        <li class="nav-item" id="nav_link_one"><a class="nav-link" href="index.html">Home</a></li> <!-- Home page link -->
+                        <li class="nav-item" id="nav_link_two"><a class="nav-link" href="ourprograms.html">Our Programs</a></li> <!-- Our programs page link -->
+                        <li class="nav-item" id="nav_link_three"><a class="nav-link" href="careers.html">Careers</a></li><!-- Careers page link -->
+                        <li class="nav-item" id="nav_link_four"><a class="nav-link" href="successstories.html">Success Stories</a></li><!-- Success stories link -->
+                        <li class="nav-item" id="nav_link_five"><a class="nav-link" href="events.html">Events</a></li><!-- Events page link -->
+
+                        <!-- [2]W3schools.com, 'How TO - Responsive Top Navigation', 1999.[Online]. Available: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp [Accessed: 09- Feb- 2024]-->
+                        <!-- Icon for opening the hidden navbar on mobile phones -->
+                        <li class="nav-item icon" id="nav_link_six">
+                            <a href="javascript:void(0);" onclick="navbarOpen()">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Header Banner -->
+            <section id="head_banner" role="banner">
+                <!-- Slide in element displaying the name and motto of the home at the top of every page -->
+                <div id="header_slide">
+                    <h1>Limuru Cheshire Home</h1><!-- Home name -->
+                    <p>They deserve to live with dignity</p><!-- Home motto -->
+                </div>
+            </section>
+        </header>
+        <!-- Main page content -->
+        <main>
+            <!-- Introductory Paragraph to the programs at the facility -->
+            <div id="programs-intro">
+                <p><abbr>LCH</abbr> has a variety of programs that are geared towards helping the girls at our home to improve their quality of life. These activities are designed to be as simple as possible yet beneficial in the long run. We believe that it is our responsibility to enable these girls to be able to fend for themselves after they leave the Home. Some of these abilities include reading and writing, knitting, artistry and cooking.</p>
+            </div>
+
+            <!-- Academic and Technical Programs Section -->
+            <section class="main-programs">
+                <!-- Header for the program section -->
+                <h1>Academic and Technical Programs</h1>
+                <ul>
+                    <!-- First program -->
+                    <li class="program-one">
+                        <!-- Image depicting the first program -->
+                        <img src="/media/graduating.jfif" alt="Some of the girls from the home holding their books">
+                        <!-- Explanation for the first program -->
+                        <article>
+                            <h3>The Three Rs</h3>
+                            <p>
+                                Maimonides once said, <q>“Give a man a fish and you feed him for a day; teach a man to fish and you feed him for a lifetime</q>Our institution serves young girls who suffer from several disabilities with the most common kinds being mental challenges. These inhibit the children's ability to learn in normal school environments. However, we do believe that knowledge is power. Therefore, we have employed a group of teachers who are well-equipped to assess and handle the various needs of all the students and provide them with the highest quality of education possible based on their ability.
+                            </p>
+                        </article>
+                    </li>
+
+                    <!-- Second program -->
+                    <li class="program-one">
+                        <!-- Image depicting the second program -->
+                        <img src="/media/textile.jfif" alt="A girl behind a sewing machine">
+                        <!-- Explanation for the second program -->
+                        <article>
+                            <h3>Textile</h3>
+                            <p>
+                                The textile industry is a major industry in Kenya and is a source of income for a large number of Kenyans, mostly women. We at <abbr>LCH</abbr> strive to give our girls the necessary skills needed to be competitive in this field. They are involved in tasks like dressmaking, knitting, and crochet work. During their stay at the Home, their products are frequently sold with the gains from those products being given to the girls as pocket money. Our graduates continue to work in the textile industry and carve a comfortable life for themselves in society.
+                            </p>
+                        </article>
+                    </li>
+
+                    <!-- Third program -->
+                    <li class="program-one">
+                        <!-- Image depicting the third program -->
+                        <img src="/media/beadwork.PNG" alt="One of the girls using beads to beautify a bag">
+                        <!-- Explanation for the third program -->
+                        <article>
+                            <h3>Bead Work</h3>
+                            <p>
+                                Using beads to create different forms of art is a very mentally stimulating activity for children living with disabilities. Aside from the health benefit, we encourage our girls to engage in beadwork as it is a reliable income source in most Kenyan societies and a great way of nurturing their creativity.
+                            </p>
+                        </article>
+                    </li>
+
+                    <!-- Fourth program -->
+                    <li class="program-one">
+                        <!-- Image depicting the fourth program -->
+                        <img src="/media/computer.jfif" alt="Two girls at a computer desk alongside their tutor">
+                        <!-- Explanation for the fourth program -->
+                        <article>
+                            <h3>Computer Literacy</h3>
+                            <p>
+                                We are living in an era where technological advancements are evolving at a very rapid rate. It is therefore mandatory that we equip the girls with skills that enable them to cope in this technological age. We have a modern computer laboratory as well as a very skilled computer teacher who helps the girls learn basic computer skills. Some of the girls who are up to the task are given further, more comprehensive information.
+                            </p>
+                        </article>
+                    </li>
+
+                    <!-- Fifth program -->
+                    <li class="program-one">
+                        <!-- Image depicting the fifth program -->
+                        <img src="/media/farming.PNG" alt="Some girls on the farm carrying farm equipment">
+                        <!-- Explanation for the fifth program -->
+                        <article>
+                            <h3>Crop Husbandry</h3>
+                            <p>
+                                Farming is both a pleasurable and profitable activity. Our girls spend time working on the open farm and greenhouse producing a wide variety of crops from maize to mushrooms. Most of them have become highly skilled in these activities and some of these products are given to visitors as souvenirs and we have received many compliments on the crops' amazing quality. Some of our graduates have gone on to manage very successful farms.
+                            </p>
+                        </article>
+                    </li>
+
+                    <!-- Sixth program -->
+                    <li class="program-one">
+                        <!-- Image depicting the sixth program -->
+                        <img src="/media/animals.jfif" alt="Chicken coming out of their coup">
+                        <!-- Explanation for the sixth program -->
+                        <article>
+                            <h3>Animal Husbandry</h3>
+                            <p>
+                                Children love animals and so do the girls at our home. Taking care of the livestock on our farm is one of the tasks that the children look forward to every day. It offers them the opportunity to be outside around animals and at the same time learn basic facts on how to properly maintain livestock.
+                            </p>
+                        </article>
+                    </li>
+
+                    <!-- Seventh program -->
+                    <li class="program-one">
+                        <!-- Image depicting the seventh program -->
+                        <img src="/media/Artwork.PNG" alt="A beautiful painting of a flower">
+                        <!-- Explanation for the seventh program -->
+                        <article>
+                            <h3>Artwork</h3>
+                            <p>
+                                We have one of the best art teachers in Kenya at our facility helping nurture the girls' creativity through painting, drawing, and sketching. Some of the girls have become experts in this field and have made art pieces that astound the local community as well as the visitors who come to our Home.
+                            </p>
+                        </article>
+                    </li>
+
+                    <!-- Eight program -->
+                    <li class="program-one">
+                        <!-- Image depicting the eight program -->
+                        <img src="/media/Baking.PNG" alt="Two girls preparing a loaf of bread for the oven">
+                        <!-- Explanation for the eight program -->
+                        <article>
+                            <h3>Baking and Cooking</h3>
+                            <p>
+                                Our skilled chef not only provides sumptuous meals for the girls three times a day but also takes her time to train them in the art of baking and cooking as well as basic table-laying skills. These activities will benefit the girls when they leave the Home when they have to leave on their own allowing them to be self-reliant. It would also provide a very efficient source of income.
+                            </p>
+                        </article>
+                    </li>
+                </ul>
+
+                <!-- Load more button -->
+                <button id="load-more-button-one" onclick="loadMore('one')">Load More</button>
+            </section>
+            
+            <!-- Welfare Programs Section -->
+            <section class="main-programs">
+                <!-- Header for programs -->
+                <h1>Welfare program</h1>
+                <ul>
+                    <!-- First program -->
+                    <li class="program-two">
+                        <!-- Image depicting the first program -->
+                        <img src="/media/Singing.PNG" alt="The girls at the home being led in song by a nun">
+                        <!-- Explanation for the first program -->
+                        <article>
+                            <h3>Spiritual wellbeing</h3>
+                            <p>
+                                We hold to the wise words of David Platt when he said <q>If you can trust God to save you for eternity, you can trust him to lead you for a lifetime</q> <abbr>LCH</abbr> is based on Catholic values and we do our best to instill these values in the girls who stay here. We hold daily prayer sessions and weekly mass with a well-trained chaplain who is also available every day of the week to minister to the children's spiritual needs. We also have bible classes included in the girl's reading and writing curriculum.
+                            </p>
+                        </article>
+                    </li>
+
+                    <!-- Second program -->
+                    <li class="program-two">
+                        <!-- Image depicting the second program -->
+                        <img src="/media/physiotherapy.jfif" alt="Two physiotherapists conducting a physiotherapy session with two of the girls">
+                        <!-- Explanation for the second program -->
+                        <article>
+                            <h3>Physiotherapy</h3>
+                            <p>
+                                Many of the girls at our home suffer from various physical impediments. These girls receive physiotherapy sessions regularly from a team of highly competent physiotherapists who handle the girls with plenty of love and care. These sessions benefit the girls by improving their mobility and reducing any pain they may struggle with due to their disabilities.
+                            </p>
+                        </article>
+                    </li>
+
+                    <!-- Third program -->
+                    <li class="program-two">
+                        <!-- Image depicting the third program -->
+                        <img src="/media/psychology.jfif" alt="Some girls seated under a tent waiting for a group physiotherapy session to start">
+                        <!-- Explanation for the third program -->
+                        <article>
+                            <h3>Psychotherapy</h3>
+                            <p>
+                                With advancements in modern medicine, we have been able to develop several medical techniques for helping people living with mental disabilities. Our group of professional counselors, psychiatrists, and psychotherapists work together to provide the girls with top-notch mental health services that improve their quality of life.
+                            </p>
+                        </article>
+                    </li>
+
+                    <!-- Fourth program -->
+                    <li class="program-two">
+                        <!-- Image depicting the fourth program -->
+                        <img src="/media/Sports.PNG" alt="Children engaging in various games on the field">
+                        <!-- Explanation for the fourth program -->
+                        <article>
+                            <h3>Sports</h3>
+                            <p>
+                                O. Fred Donaldson wisely said that <q>Children learn as they play. Most importantly, in play, children learn how to learn.</q> Based on this wise principle, we strive to offer our girls an opportunity to have fun through play. We have a well-equipped sports room with various balls, skipping ropes, and other play items. We offer the children at least an hour a day to be outside engaging in various physical activities under the watchful eye of our P.E. teacher.
+                            </p>
+                        </article>
+                    </li>
+
+                    <!-- Fifth program -->
+                    <li class="program-two">
+                        <!-- Image depicting the fifth program -->
+                        <img src="/media/medicalcheckup.PNG" alt="A girl smiling widely">
+                        <!-- Explanation for the fifth program -->
+                        <article>
+                            <h3>Medical Checkups</h3>
+                            <p>
+                                We partner with various hospitals in our vicinity to provide professional monthly medical checkups for all the children under our care. These hospitals also offer 24/7 on-call services in case of emergencies. The matrons who take care of the girls are also skilled nurses who can help with minor emergencies and provide first aid in case of a major event before the doctor arrives.
+                            </p>
+                        </article>
+                    </li>
+                </ul>
+
+                <!-- Loadmore button -->
+                <button id="load-more-button-two" onclick="loadMore('two')">Load More</button>
+            </section>
+        </main>
+
+        <!--Footer-->
+        <footer>
+            <!-- Prompt to get people to donate to the mission -->
+            <section id="donation-button">
+                <div>
+                    <h3 id="footer-donate-message">Donate to our mission: </h3>
+                </div>
+                <div>
+                    <!-- Donate button -->
+                    <!-- Bootstrap styling used. 
+                    [3]getbootstrap.com 'Buttons', 2011.[Online]. Available:https://getbootstrap.com/docs/4.0/components/buttons/. [Accessed: 09- Feb- 2024] -->
+                    <!-- [1]A.Toky, 'How can I make a button link to another page?'(Answer 3), 2019.[Source code]. https://stackoverflow.com/a/55384256-->
+                    <button type="button" class="btn btn-danger donate-button footer-donate-button" onclick='window.location.href ="https://www.cheshiredisabilityservices.org/donate/"'>DONATE</button>
+                </div>
+            </section>
+
+            <!-- Social Media Links -->
+            <section id="social-media">
+                <!-- Left section containing text -->
+                <div id="social-media-header">
+                    <h2>Get connected with us on facebook:</h2><!-- Text describing the social media section -->
+                </div>
+
+                <!-- Right section containing social media links -->
+                <div id="social-media-links">
+                        <!-- Facebook -->
+                        <!-- [1]A.Toky, 'How can I make a button link to another page?'(Answer 3), 2019.[Source code]. https://stackoverflow.com/a/55384256-->
+                        <button id="facebook" onclick='window.location.href="https://web.facebook.com/profile.php/?id=100063478835319&_rdc=1&_rdr"'><i class="fa fa-facebook-f"></i></button>
+                </div>
+            </section>
+
+            <!-- Other Necessary Links-->
+            <!-- More info First Column links -->
+            <div class="more_info_one">
+                    <h2>More Info</h2>
+                    <!-- About us link -->
+                    <a href="index.html#about-us" class="links">About Us</a>
+                    <!-- FAQs link -->
+                    <a href="index.html#faqs" class="links">FAQ</a>
+                    <!-- Our Founders Link -->
+                    <a href="index.html#founders" class="links"> Our Founders</a>
+            </div>
+
+            <!-- More Info Second Column Information-->
+            <div class="more_info_two">
+                    <h2>More Info</h2>
+                    <!-- Agenda link -->
+                    <a href="https://www.cheshiredisabilityservices.org/resources/" class="links" target="_blank">Our Agenda</a>
+                    <!-- Latest News link -->
+                    <a href="https://www.aciafrica.org/tag/limuru-cheshire-home" class="links" target="_blank">Latest News</a>
+                    <!-- CDSK Link -->
+                    <a href="https://www.cheshiredisabilityservices.org/" class="links" target="_blank">CDSK</a>
+            </div>
+
+            <!-- Contact Us Section -->
+            <div id="contact_section">
+                <!--Contacts-->
+                <div id="contacts">
+                    <h2>Contact Us</h2>
+                    <address>
+                        <!-- Email -->
+                        <!--[1]Hubspot.com, 'Create a click-to-call or mailto link', 2023.[Online]. Available: 'https://knowledge.hubspot.com/website-pages/create-a-click-to-call-or-mailto-link#:~:text=In%20the%20rich%20text%20toolbar%2C%20click%20the%20link,your%20mailto%20link%2C%20starting%20with%20the%20email%20address.'-->
+                        <span>By email at: <a href="mailto:limurucheshirehome@gmail.com" class="links">limurucheshirehome@gmail.com</a></span>
+                        <!-- Phone contact -->
+                        <!--[1]Hubspot.com, '4 Steps to Add a Clickable Telephone Link in HTML', 2022.[Online]. Available: 'https://blog.hubspot.com/website/html-telephone-link'-->
+                        <span>By phone using: <a href="tel:+254724693418" class="links">+245724693418</a></span>
+                    </address>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Script for load more functionality-->
+        <script src="/javascript/loadmore.js"></script>
+        <!-- Script for the font controls-->
+        <script src="javascript/fontcontrols.js"></script>
+    </body>
+    
+</html>
